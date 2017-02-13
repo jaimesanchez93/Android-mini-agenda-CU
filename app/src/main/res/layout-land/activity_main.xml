@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout>
+        <EditText
+            android:id="@+id/texto"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:hint="Numero"
+            android:numeric="integer"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:id="@+id/botonAgregar"
+            android:onClick="clickAgregarNumero"
+            android:text="Añadir"/>
+    </LinearLayout>
+
+
+
+
+
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@android:id/list">
+
+    </ListView>
+    <TextView
+        android:id="@android:id/empty"
+        android:text="Lista vacía"/>
+
+
+
+</TableLayout>
